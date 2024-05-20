@@ -1,6 +1,6 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaPhone, FaEnvelope, FaWifi, FaArrowRight } from "react-icons/fa";
-
+import Link from 'next/link';
 const Contact = () => {
   return (
     <div className="bg-gray-100">
@@ -67,15 +67,27 @@ const Contact = () => {
         <h1 className="text-3xl font-bold mb-6">Where could journey at Vishnu take you?</h1>
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div>
-              <a href="/department" className="text-lg font-semibold text-white flex items-center justify-center py-3 px-6 bg-blue-500 rounded-full"><FaArrowRight className="mr-2" />Departments</a>
-            </div>
-            <div>
-              <a href="/aboutUS" className="text-lg font-semibold text-white flex items-center justify-center py-3 px-6 bg-blue-500 rounded-full"><FaArrowRight className="mr-2" />About Us</a>
-            </div>
-            <div>
-              <a href="/" className="text-lg font-semibold text-white flex items-center justify-center py-3 px-6 bg-blue-500 rounded-full"><FaArrowRight className="mr-2" />Placements</a>
-            </div>
+      <div>
+        <Link href="/department">
+          <a className="text-lg font-semibold text-white flex items-center justify-center py-3 px-6 bg-blue-500 rounded-full">
+            <FaArrowRight className="mr-2" />Departments
+          </a>
+        </Link>
+      </div>
+      <div>
+        <Link href="/aboutUS">
+          <a className="text-lg font-semibold text-white flex items-center justify-center py-3 px-6 bg-blue-500 rounded-full">
+            <FaArrowRight className="mr-2" />About Us
+          </a>
+        </Link>
+      </div>
+      <div>
+        <Link href="/">
+          <a className="text-lg font-semibold text-white flex items-center justify-center py-3 px-6 bg-blue-500 rounded-full">
+            <FaArrowRight className="mr-2" />Placements
+          </a>
+        </Link>
+    </div>
           </div>
         </div>
       </div>
