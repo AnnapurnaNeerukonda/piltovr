@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from '../styles/Home.module.css';
 import { Card, CardContent, CardDescription} from "@/components/ui/card";
-
+import Link from 'next/link';
 const Home = () => {
   const [establishedYear, setEstablishedYear] = useState(0);
   const [numberOfStudents, setNumberOfStudents] = useState(0);
@@ -76,9 +76,11 @@ const Home = () => {
             <h5 style={{ color: "#0000ff" }}>Acres Green Campus</h5>
           </div>
         </div>
-        <a href="/aboutUS" className="btn btn-primary">
+        <Link href="/aboutUS" passHref>
+        <div className="btn btn-primary cursor-pointer">
           Explore More
-        </a>
+        </div>
+      </Link>
       </div>
       <div className="container mt-3">
         <h5 className="mt-5 mb-5 text-center">Accreditations & Awards</h5>
