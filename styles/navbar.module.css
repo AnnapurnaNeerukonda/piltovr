@@ -1,0 +1,22 @@
+.navbarimg {
+  width: 35%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .navbarBrand {
+    width: 35%;
+  }
+  .navbarimg {
+    width: 60%;
+  }
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}

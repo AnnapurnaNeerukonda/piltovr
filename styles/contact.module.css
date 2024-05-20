@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.address-map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%; 
+  max-width: 800px; 
+}
+
+.address-map-container .col-md-4 {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .address-map-container {
+    width: 90%; 
+  }
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-size: 24px; 
+}

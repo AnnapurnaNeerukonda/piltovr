@@ -1,0 +1,109 @@
+
+.containerFluid {
+  position: relative;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+}
+
+.card:hover .overlay-text {
+  opacity: 1; 
+}
+.container {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)), url(https://content.jdmagicbox.com/comp/bhimavaram/90/9999pmulhydstd86690/catalogue/shri-vishnu-engineering-college-for-women-bhimavaram-ho-bhimavaram-colleges-1x5gf1z.jpg);
+  background-size: cover;
+  background-position: center; 
+  height: auto;
+  min-height: 450px; 
+}
+
+.card {
+  transition: transform 0.3s ease;
+  width: 250px; 
+  height: 150px; 
+  background-color: rgba(255, 255, 255, 0.7); 
+  border: 1px solid #000; 
+  position: relative;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(173, 216, 230, 0);
+  transition: background-color 0.3s ease;
+}
+
+.card:hover::after {
+  background-color: rgba(27, 119, 150, 0.5); 
+}
+.card-img-top {
+  transition: filter 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  filter: grayscale(100%); 
+}
+.cardtext {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card:hover .cardtext {
+  display: block;
+  background-color:black;
+}
+@media (max-width: 450px) {
+  .row-cols-1 {
+    justify-content: center; /* Center-align the cards when there's only one column */
+  }
+}
+
+@media (max-width: 767px) {
+  .container,
+  .a {
+    min-height: auto; 
+    height: auto; 
+  }
+  .card {
+    transition: transform 0.3s ease;
+    width: 230px; 
+    height: 150px; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    border: 1px solid #000; 
+    position: relative;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    transition: transform 0.3s ease;
+    width: 180px; 
+    height: 150px; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    border: 1px solid #000; 
+    position: relative;
+  }
+}
+
